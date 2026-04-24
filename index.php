@@ -47,8 +47,8 @@
                 <td><?= $user['phone'] ?></td>
                 <td><?= $user['address'] ?></td>
                 <td>
-                    <a href="edit.php">Edit</a>
-                    <a href="#" class="btn-delete">Delete</a>
+                    <a href="edit.php?id=<?= $user['id'] ?>">Edit</a>
+                    <a href="action.php?delete=<?= $user['id'] ?>" class="btn-delete">Delete</a>
                 </td>
             </tr>
 
