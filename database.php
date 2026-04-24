@@ -37,19 +37,19 @@
     try {
 
         $conn = new mysqli($db_server, $db_user, $db_pass, $db_name);
-        $conn->set_charset("utf8mb4");
+        //$conn->set_charset("utf8mb4");
 
-        $sql = "CREATE TABLE IF NOT EXISTS users (
-            id INT AUTO_INCREMENT PRIMARY KEY,
-            name VARCHAR(255) NOT NULL,
-            email VARCHAR(255) NOT NULL UNIQUE,
-            phone VARCHAR(20) NOT NULL,
-            address Text NOT NULL,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-        )";
+        //$sql = "CREATE TABLE IF NOT EXISTS users (
+        //    id INT AUTO_INCREMENT PRIMARY KEY,
+        //    name VARCHAR(255) NOT NULL,
+        //    email VARCHAR(255) NOT NULL UNIQUE,
+        //    phone VARCHAR(20) NOT NULL,
+        //    address Text NOT NULL,
+        //    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        //)";
 
-        $conn->query($sql);
-        echo "Table 'users' created successfully";
+        //$conn->query($sql);
+        //echo "Table 'users' created successfully";
 
 
     }
